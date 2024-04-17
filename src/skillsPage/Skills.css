@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Screen Matrix';
+  src: url('../../public/datcub-font/Datcub-eZO2g.ttf') format('truetype');
+}
+
+.skills-box {
+    position: relative;
+    width: 80%;
+    height: 28rem;
+    max-width: 700px; /* Adjust as needed */
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #006400; /* Dark green border */
+    border-radius: 10px;
+    margin-bottom: 200px;
+    overflow: hidden;
+  }
+ 
+  .skills-box::before {
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    width: calc(99.8% + 2px);
+    height: calc(87% + 2px);
+    background-image: linear-gradient(to right, #041f04 1%, transparent 5%),
+                      linear-gradient(to bottom, #041f04 1%, transparent 5%);
+    background-size: 30px 30px;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: #ED6A5E; /* Reddish color */
+    border-radius: 50%;
+  } 
+  
+  .box-content {
+    text-align: center;
+  }
+  
+  .box-title-skills {
+    font-size: 20px;
+    color: #fff;
+    font-weight: lighter;
+    font-family: 'Screen Matrix', monospace;
+  }
+
+  .box-line-skills {
+    height: 1px;
+    width: 110%;
+    background-color: #006400; /* White color */
+    margin-top: 15px;
+    margin-left: -20px;
+  }
+
+
+  /* Add the following CSS to create the animation effect */
+/* Update the CSS for the skills animation */
+
+.skill-category {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  font-family: 'Screen Matrix', monospace;
+  padding-top: 10px;
+  font-size: 1.7vw;
+}
+
+.skills-details{
+  font-family: 'Screen Matrix', monospace;
+}
+
+.skills-details {
+  opacity: 1;
+}
+
+.skills-details .skill-category {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in-animation 1s forwards;
+}
+
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+ 
+@media screen and (max-width: 1190px) {
+  .name-1 {
+    font-size: 6vw;
+  }
+
+  .designation-1 {
+    font-size: 4vw;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .name-1 {
+    font-size: 6vw;
+  }
+
+  .designation-1 {
+    font-size: 4vw;
+  }
+
+  .box-title-skills{
+    font-size: 15px;
+  }
+
+  .skills-details{
+    font-size: 20px;
+  }
+
+  .box-line-skills{
+    margin-left: 5px;
+  }
+
+  .skill-category{
+    font-size: 2.2vw;
+  }
+
+  .skills-list{
+    margin-top: -10px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .name-1 {
+    font-size: 6vw;
+  }
+
+  .designation-1 {
+    font-size: 4vw;
+  }
+
+  .box-title-skills{
+    font-size: 11px;
+  }
+
+  .box-line-skills{
+    margin-left: -1px;
+    width: 115%;
+  }
+
+  .skills-details{
+    font-size: 18px;
+  }
+
+  .skill-category{
+    font-size: 2.9vw;
+  }
+
+}

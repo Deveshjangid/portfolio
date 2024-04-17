@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Screen Matrix';
+  src: url('../public/datcub-font/Datcub-eZO2g.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background color */
+    overflow: hidden; /* To prevent scrollbars */
+  }
+  
+  .left-corner{
+    position: fixed;
+    width: 15%;
+    height: 130px;
+    background-color: #31F500;
+    opacity: 0.2;
+    box-shadow: 347.3px 347.3px 347.3px;
+    border-radius: 50%;
+    filter: blur(45px);
+    z-index: 1;
+    margin-left: -100px;
+    margin-bottom: -30px;
+  }
+  
+  .right-corner {
+    position: fixed;
+    width: 10%;
+    height: 50%;
+    background-color: #31F500;
+    opacity: 0.2;
+    box-shadow: 347.3px 347.3px 347.3px;
+    border-radius: 50%;
+    filter: blur(45px);
+    z-index: 1;
+    margin-right: -80px;
+    margin-top: -80px;
+  }
+
+  .left-corner {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .right-corner {
+    top: 10%;
+    right: 0;
+  }
+  
+  /* Add other styles for the rest of your content */
+  
+  .name-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .name {
+    font-family: 'SCREEN MATRIX', monospace;
+    font-size: 80px;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: #fff; 
+    text-shadow: 5px 5px 8px rgba(94, 217, 110, 0.8);
+  }
+  
+  .designation {
+    font-family: 'SCREEN MATRIX', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #91cfa1;
+    color: #00FF41; /* #00FF41 color */
+  }
+
+  @media screen and (max-width: 1190px) {
+    .name {
+      font-size: 6vw;
+    }
+  
+    .designation {
+      font-size: 3vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .name {
+      font-size: 6vw;
+    }
+  
+    .designation {
+      font-size: 3vw;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .name {
+      font-size: 8vw;
+    }
+  
+    .designation {
+      font-size: 4vw;
+    }
+  }

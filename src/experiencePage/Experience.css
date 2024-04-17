@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Screen Matrix';
+  src: url('../../public/datcub-font/Datcub-eZO2g.ttf') format('truetype');
+}
+
+.content-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Adjusted to start from flex-start */
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .left-corner1, .right-corner1 {
+    position: absolute;
+    width: 15%;
+    height: 130px;
+    background-color: #31F500;
+    opacity: 0.2;
+    box-shadow: 347.3px 347.3px 347.3px;
+    border-radius: 50%;
+    filter: blur(45px);
+    z-index: 1;
+  }
+  
+  .left-corner1 {
+    top: -5%;
+    left: -5%;
+  }
+  
+  .right-corner1 {
+    bottom: -10%;
+    right: -1%;
+  }
+  
+  .name-container1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .name1 {
+    font-family: 'Screen Matrix', monospace;
+    font-size: 80px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(127, 204, 137, 0.8);
+  }
+  
+  .designation1 {
+    font-family: 'Screen Matrix', monospace;
+    color: #00ff41;
+    font-size: 40px;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px #658a6e;
+  }
+  
+  .education-box {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    padding: 20px;
+    border: 2px solid #006400;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    overflow: hidden;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: #ED6A5E;
+    border-radius: 50%;
+  }
+  
+  .box-content {
+    text-align: left;
+    position: relative;
+  }
+  
+  .box-title-experience {
+    font-size: 20px;
+    color: #fff;
+    font-weight: lighter;
+    font-family: 'Screen Matrix', monospace;
+    text-align: center;
+  }
+    
+  .box-line-experience {
+    height: 1px;
+    width: 110%;
+    background-color: #006400;
+    margin-top: 15px;
+    margin-left: -20px;
+  }
+
+  .circle-2 {
+    position: absolute;
+    top: -1px;
+    right: 1px;
+    width: 20px; 
+    height: 20px; 
+    color: #000;
+    background-color: yellow; /* Reddish color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+  } 
+
+  .circle-2::before {
+    content: 'x';
+    position: relative;
+    top: -3px; /* Adjust as needed */
+} 
+  
+  .experience-details {
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  .typewriter-text {
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Screen Matrix', monospace;
+    font-size: 20px;
+    margin-top: 20px;
+    animation: typing 4s steps(20, end);
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fade-in-animation 1s forwards;
+  }
+  
+  @keyframes fade-in-animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .typewriter-text-experience {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 8px;
+    font-family: 'Screen Matrix', monospace;
+    font-size: 18px;
+  }
+  
+  .experience-details {
+    margin-top: 20px;
+    opacity: 0;
+    animation: fade-in-animation 1s 0.5s forwards;
+    font-family: 'Screen Matrix', monospace;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .terminal-list {
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .terminal-list li {
+    opacity: 0;
+    animation: fade-in-animation 0.5s forwards;
+    font-family: 'Screen Matrix', monospace;
+    text-align: left;
+  }
+  
+  .terminal-list li:nth-child(1) {
+    animation-delay: 3s;
+  }
+  
+  .terminal-list li:nth-child(2) {
+    animation-delay: 3.5s;
+  }
+   
+  .terminal-list li:nth-child(3) {
+    animation-delay: 4s;
+  }
+  
+  .terminal-list li:nth-child(4) {
+    animation-delay: 4.5s;
+  }
+  
+  .show {
+    opacity: 1;
+  }
+   
+   
+  @media screen and (max-width: 1190px) {
+    .name-1 {
+      font-size: 6vw;
+    }
+  
+    .designation-1 {
+      font-size: 4vw;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .name-1 {
+      font-size: 6vw;
+    }
+  
+    .designation-1 {
+      font-size: 4vw;
+    }
+
+    .box-title-experience{
+      font-size: 15px;
+    }
+
+    .education-box{
+      margin-top: 5px;
+    }
+
+    .fade-in{
+      font-size: 17px;
+    }
+
+  }
+  
+  @media screen and (max-width: 480px) {
+    .name-1 {
+      font-size: 6vw;
+    }
+  
+    .designation-1 {
+      font-size: 4vw;
+    }
+
+    .experience-details{
+      font-size: 1.7vw;
+    }
+
+    .box-title-experience{
+      font-size: 2.7vw;
+    }
+
+    .education-box{
+      margin-top: -10px;
+    }
+
+    .fade-in{
+      font-size: 3.9vw;
+    }
+
+    .typewriter-text-experience{
+      font-size: 3.7vw;
+    }
+
+    .box-line-experience{
+      width: 118%;
+      margin-left: 1px;
+    }
+  }

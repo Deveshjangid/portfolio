@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Screen Matrix';
+  src: url('../../public/datcub-font/Datcub-eZO2g.ttf') format('truetype');
+} 
+
+.box-title-social{
+  font-size: 20px;
+  color: #fff;
+  font-weight: lighter;
+  font-family: 'Screen Matrix', monospace;
+  text-align: center;
+}
+
+.box-line-socials {
+  height: 1px;
+  width: 110%;
+  background-color: #006400; /* White color */
+  margin-top: 15px;
+  margin-left: -20px;
+}
+
+.circle-3 {
+  position: absolute;
+  top: -1px;
+  right: -3px;
+  width: 20px; 
+  height: 20px; 
+  color: #000;
+  background-color: yellow; /* Reddish color */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.circle-3::before {
+  content: 'x';
+  position: relative;
+  color: #000;
+  top: -3px; /* Adjust as needed */
+}
+
+/* Container for social icons */  
+  .icon {
+    width: 50px; 
+    height: 50px; 
+    margin: 0 10px;
+    filter: invert(1);
+  }
+  
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .box-title-1 {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #006400;
+    font-weight: bold;
+    animation: fadeInUp 1s ease-out;
+    font-family: 'Screen Matrix', monospace;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .contact-box .box-content a {
+    text-decoration: none; 
+    color: #00ff41; 
+    margin: 0 10px; 
+    font-weight: bold;
+  }
+
+  .icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon div{
+    text-decoration: none;
+    color: white;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 30px;
+  }
+
+  .message-1 {
+    font-size: 20px;
+    margin-top: 30px;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+    font-family: 'Screen Matrix', monospace;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+
+    .box-title-social{
+      font-size: 14px;
+    }
+ 
+    .box-line-socials{
+      margin-left: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+
+    .box-title-social{
+      font-size: 11px;
+    }
+
+    .box-line-socials{
+      width: 115%;
+      margin-left: 1px;
+    }
+
+    .social-icons{
+      margin-top: 45px;
+      gap: 10px;
+    }
+
+    .box-title-1{
+      font-size: 2.8vw;
+    }
+
+    .icon{
+      width: 30px;
+      height: 30px;
+    }
+
+    .box-title-social{
+      font-size: 2.6vw;
+      margin-left: -5px;
+    }
+  }
