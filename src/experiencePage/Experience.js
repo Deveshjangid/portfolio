@@ -60,7 +60,7 @@ const ExperiencePage = () => {
       </div> 
  
       <div className="education-box">
-        <div className="circle"></div>
+        <div className="circle"></div> 
         <div className="box-content">
           <div className="box-title-experience">$//192.168.1.1::devesh-jangid/experience.bat</div>
           <Link to="/content" className="circle-2"></Link>
@@ -75,7 +75,7 @@ const ExperiencePage = () => {
             {showParagraph && (
               <p className="fade-in" >During my internship at <span style={{ fontWeight: 'bold', color: '#31F500', fontSize: '25px' }} >BrownEver</span> in Delhi, India, I served as a dynamic full stack developer. My responsibilities included:</p>
             )}
-            {showList && (
+            {showList && ( 
               <ul className="terminal-list">
                 <li className="fade-in">Developing front-end components using React.js</li>
                 <li className="fade-in">Designing and implementing RESTful APIs with Node.js and Express</li>

@@ -30,7 +30,7 @@ const SkillsPage = () => {
           <div className="box-title-skills">$//192.168.1.1::devesh-jangid/skills.bat</div>
           <Link to="/content" className="circle-2"></Link>
           <div className="box-line-skills"></div>
- 
+  
           <div className={`skills-details ${showSkills ? 'fade-in' : ''}`}>
             <h2 className="skills-details">Skills</h2>
             <div className="skills-list">

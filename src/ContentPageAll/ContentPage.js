@@ -10,7 +10,7 @@ const ContentPage = () => {
         <div className="name-container-2">
             <div className="name-2">Devesh Jangid</div>
             <div className="designation-2">WEB DEVELOPER_</div>
-        </div> 
+        </div>  
 
         <div className="content-wrapper">
         <div className="box-row">

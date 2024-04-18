@@ -92,8 +92,8 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 65%;
-  margin-bottom: 30px;
-  margin-top:  20px;
+  margin-bottom: 70px;
+  margin-top:  25px;
   overflow-y: auto;
 }
 
@@ -110,10 +110,10 @@
 
 .box {
   width: 20%;
-  margin: 30px; /* Add spacing between boxes */
+  margin: 20px; /* Add spacing between boxes */
   text-align: left;
   border: 1px solid #fff; /* White border for all boxes */
-  padding: 8px; /* Add padding to make content more readable */
+  padding: 7px; /* Add padding to make content more readable */
   font-family: 'Screen Matrix', monospace;
   position: relative;
 }
@@ -161,9 +161,10 @@
 
 .box .box-line-content {
   height: 3px;
-  width: 127%;
+  width: 11.5vw;
   margin-left: -29px;
   background-color: #31F500;
+  display: block;
 }
 
 .box-description a {
@@ -229,7 +230,7 @@
   }
 
   .box .box-title {
-    font-size:  3.5vw;
+    font-size:  3.5vw; 
   }
 
   .content-wrapper{
@@ -265,7 +266,7 @@
   }
 
   .box-description a {
-    font-size: 3vw;
+    font-size: 2.8vw;
   }
 
   .box .box-title {
@@ -274,6 +275,7 @@
 
   .content-wrapper{
     margin-top: -10px;
+    margin-bottom: 180px;
   }
 
 }

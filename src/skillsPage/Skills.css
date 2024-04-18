@@ -67,7 +67,7 @@
   transition: opacity 0.5s ease, transform 0.5s ease;
   font-family: 'Screen Matrix', monospace;
   padding-top: 10px;
-  font-size: 1.7vw;
+  font-size: 1.2vw;
 }
 
 .skills-details{
@@ -150,7 +150,7 @@
   }
 
   .box-title-skills{
-    font-size: 11px;
+    font-size: 2.7vw;
   }
 
   .box-line-skills{
